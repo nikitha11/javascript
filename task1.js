@@ -1,10 +1,6 @@
-console.log("hi")
-function myFunction() {
-	debugger
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+$(document).ready(function(){
+	$("h1").click(function(){
+		$("#myDIV").toggle();
+
+	});
+});
